@@ -81,9 +81,9 @@ export default {
         upPic() {
             Promise.all([this.a(), this.b()]).then(res => {
                 console.log(res, '777')
-                // if (res.length == 2) {
-                //     this.c()
-                // }
+                if (res.length == 2) {
+                    this.c()
+                }
             }).catch(error => {
                 console.log(error, '9999')
             })
